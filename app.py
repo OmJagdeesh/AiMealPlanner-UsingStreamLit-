@@ -2,8 +2,7 @@ import streamlit as st
 import openai
 
 # Set OpenAI API Key (Replace with your key)
-openai.api_key = st.secrets['pass']
-
+openai.api_key = st.secrets["pass"]
 # Title
 st.title("AI-Powered Personalized Indian Meal Plan Generator")
 st.write("Get a personalized Indian meal plan based on your health profile and dietary preferences.")
