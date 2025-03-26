@@ -4,3 +4,4 @@ fpdf
 dotenv
 random
 pandas
+os
