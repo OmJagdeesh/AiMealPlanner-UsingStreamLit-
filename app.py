@@ -3,9 +3,14 @@ import openai
 import pandas as pd
 import random
 from fpdf import FPDF
+from dotenv import load_dotenv
+import os
 
-# Set OpenAI API Key (Replace with your key)
-openai.api_key = "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"
+# Load environment variables
+load_dotenv()
+
+# Get OpenAI API key
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Title
 st.title("AI-Powered Personalized Indian Meal Plan Generator")
